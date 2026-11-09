@@ -19,6 +19,8 @@ public class HomeController : Controller
         // CompanyProfile profile;
         //var profiles = _context.CompanyProfiles.ToList();
         var profile = _context.CompanyProfiles.FirstOrDefault();
+
+        
         return View(profile);
     }
 
